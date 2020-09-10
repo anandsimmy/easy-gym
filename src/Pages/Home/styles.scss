@@ -1,7 +1,6 @@
 .main-section {
     position: relative;
     width: 100%;
-    font-family: sans-serif;
 
     .main-overlay {
         position: absolute;
@@ -26,14 +25,14 @@
         }
 
         .header {
-            font-size: 1.8rem;
-            font-weight: bold;
+            font-size: 1.5rem;
+            font-weight: 500;
         }
 
         .main-header {
             margin-top: 3rem;
-            font-size: 5.5rem;
-            font-weight: bold;
+            font-size: 5.2rem;
+            font-weight: 500;
 
             .main-header-caption-highlight{
                 color: #ee563f
