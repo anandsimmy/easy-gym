@@ -1,0 +1,56 @@
+.main-section {
+    position: relative;
+    width: 100%;
+    font-family: sans-serif;
+
+    .main-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5)
+    }
+
+    .info-section{
+        position: absolute;
+        top:30%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .main-header,
+        .header {
+            color: white;
+            font-family: inherit;
+        }
+
+        .header {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .main-header {
+            margin-top: 3rem;
+            font-size: 5.5rem;
+            font-weight: bold;
+
+            .main-header-caption-highlight{
+                color: #ee563f
+            }
+        }
+
+        .member-button {
+            text-align: center;
+            width: 11rem;
+            height: 3rem;
+            margin: 3rem auto;
+            border: none;
+            background-color: #ee563f;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+
