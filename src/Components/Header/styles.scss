@@ -1,5 +1,5 @@
 .navbar {
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,6 +9,40 @@
     height: 5rem;
     z-index: 1;
     background-color: rgba(204, 204, 204, 0.466);
+
+    .mobile-hamburger {
+        display: none;
+        .material-icons {
+            font-size: 2.5rem;
+            margin-left: 1rem;
+            cursor: pointer;
+            &:focus,
+            &:active {
+                outline:none;
+            }
+        }
+    }
+    ul.side-nav{
+        margin: 0;
+        padding: 1rem;
+        list-style-type: none;
+    }
+    .side-nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 100vh;
+        background: whitesmoke;
+        li {
+            margin-top: 1rem;
+        }
+        .sign-up {
+            margin-top: 0.9rem;
+            height: 2rem;
+        }
+    }
 
     .left-items,
     .right-items {
@@ -31,16 +65,18 @@
         font-family: system-ui;
         font-weight: 500;
         width: 50%;
-        div {
+        span {
             display: inline-block;
             padding: 0;
             margin: 0;
             vertical-align: middle;
         }
-        div:hover {
+        span:hover {
             cursor: pointer;
         }
-        .sign-up {
+    }
+
+    .sign-up {
             text-align: center;
             width: 6rem;
             height: 3rem;
@@ -50,10 +86,29 @@
             cursor: pointer;
             font-family: inherit;
         }
-    }
-
     .navbar-highlighted {
         color: #ee563f
+    }
+
+}
+
+@media screen and (max-width:40rem) {
+
+    .navbar{
+        height: 4rem;
+
+        .mobile-hamburger {
+            display: block;
+        }
+    
+        .side-nav {
+            display: block;
+        }
+
+        .left-items,
+        .right-items {
+            display: none;
+        }
     }
 }
 
